@@ -5,7 +5,7 @@ module "cluster_metadata" {
   base_domain = local.base_domain
 
   provider_name   = "azure"
-  provider_region = local.resource_group
+  provider_region = local.fake_region
 
   # Azure does not allow / character in labels
   label_namespace = "kubestack.com-"
