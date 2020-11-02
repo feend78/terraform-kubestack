@@ -3,7 +3,7 @@ output "aks_vnet" {
 }
 
 output "kube_config" {
-  value = module.cluster.kube_config
+  value = module.cluster.kube_config[0]
 }
 
 output "current_config" {
